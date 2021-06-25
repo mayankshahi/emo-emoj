@@ -1,0 +1,90 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+  <div class="container">
+  
+    <center>
+     <h1 style="color: black;">EMOTION TO EMOJI</h1>
+      <br><br>
+     <div style="background-color: black; width: 300px; border-radius: 30px;">
+      <span>&#128522;</span>
+      <span>&#128512;</span>
+      <span>&#128532;</span>
+      <span>&#128546;</span>
+      <span>&#128545;</span>
+      <span>&#128548;</span>
+    </div>
+
+      <p style="font-size: 22px; color: black;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow; font-size: x-large;">Are you Happy?</b>
+        <span>&#128512;</span>     <span>&#128512;</span>     <span>&#128512;</span>
+        <hr width="70px">
+        <br>
+        <b style="color: black; font-size: x-large ;">Are you Sad?</b>
+        <span>&#128532;</span>      <span>&#128532;</span>      <span>&#128532;</span>
+        <hr width="70px">
+        <br>
+        <b style="color: red; font-size: x-large;">Are you Angry?</b>
+        <span>&#128545;</span>      <span>&#128545;</span>       <span>&#128545;</span>
+        <hr width="70px">
+        <br>
+        <b style="color: rgb(0, 225, 255); font-size: x-large;">Are you Crying?</b>
+        <span>&#128546;</span>      <span>&#128546;</span>      <span>&#128546;</span>
+        <hr width="70px">
+        <br>
+        <b style="color: rgb(255, 166, 0); font-size: x-large;">Are you Smiling?</b>
+        <span>&#128522;</span>      <span>&#128522;</span>      <span>&#128522;</span>
+        <hr width="70px">
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label style="font-size: x-large;">Snapshot - </label>
+        <div style="border: 4px dashed; height: 350px;"></div>
+      </div>
+
+               <div class="col-md-4 col-sm-12 col-xs-12">
+        <div style="background-color: rgb(9, 255, 0); border-radius: 30px;">
+        <h1>Prediction 1 -</h1>
+        <h1 id="prediction1"></h1>
+        <span></span>
+        <h1>Prediction 2 -</h1>
+        <h1 id="prediction2"></h1>
+        <span></span>
+        </div>
+               </div>
+               
+      
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="font-size: x-large;">Result - </label>
+        <div style="border: 4px dashed; height: 350px;"></div>  
+
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
